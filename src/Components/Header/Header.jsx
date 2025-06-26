@@ -135,13 +135,6 @@ const Header = () => {
               </NavLink>
               <hr className="size-1 bg-gray-300 w-full" />
               <NavLink
-                to={"/blog"}
-                className="py-2 text-base font-medium text-black transition-all duration-200 focus:text-blue-600"
-              >
-                Blog
-              </NavLink>
-              <hr className="size-1 bg-gray-300 w-full" />
-              <NavLink
                 to={"/projects"}
                 className="py-2 text-base font-medium text-black transition-all duration-200 focus:text-blue-600"
               >
