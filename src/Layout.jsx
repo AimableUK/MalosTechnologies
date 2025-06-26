@@ -15,7 +15,7 @@ const Layout = () => {
   }, [location]);
 
   return (
-    <div className="w-fit xl:w-screen overflow-x-hidden">
+    <div className="xl:w-screen overflow-x-hidden">
       <PageTitleUpdater />
       <Header />
       <section ref={outletRef}>
