@@ -25,8 +25,8 @@ const Footer = () => {
               the digital age.
             </p>
 
-            <div className="flex flex-col md:flex-row items-center justify-between gap-5 mt-5">
-              <ul className="flex flex-row items-center gap-3">
+            <div className="flex flex-col md:flex-row md:items-center md:jutify-between gap-5 mt-5">
+              <ul className="flex flex-col md:flex-row items-start justify-start md:justify-center md:items-center gap-3">
                 <li>
                   <NavLink
                     to={"/"}
