@@ -60,8 +60,7 @@ function App() {
                   title=""
                   className="text-base text-black transition-all duration-200 hover:text-opacity-80"
                 >
-                  {" "}
-                  Features{" "}
+                  Features
                 </a>
 
                 <a
@@ -69,8 +68,7 @@ function App() {
                   title=""
                   className="text-base text-black transition-all duration-200 hover:text-opacity-80"
                 >
-                  {" "}
-                  Solutions{" "}
+                  Solutions
                 </a>
 
                 <a
@@ -78,8 +76,7 @@ function App() {
                   title=""
                   className="text-base text-black transition-all duration-200 hover:text-opacity-80"
                 >
-                  {" "}
-                  Resources{" "}
+                  Resources
                 </a>
 
                 <a
@@ -87,8 +84,7 @@ function App() {
                   title=""
                   className="text-base text-black transition-all duration-200 hover:text-opacity-80"
                 >
-                  {" "}
-                  Pricing{" "}
+                  Pricing
                 </a>
               </div>
 
@@ -98,8 +94,7 @@ function App() {
                 className="hidden lg:inline-flex items-center justify-center px-5 py-2.5 text-base font-semibold text-black border-2 border-black hover:bg-black hover:text-white transition-all duration-200 focus:bg-black focus:text-white"
                 role="button"
               >
-                {" "}
-                Try for free{" "}
+                Try for free
               </a>
             </div>
           </div>
@@ -126,8 +121,7 @@ function App() {
                       className="inline-flex items-center px-6 py-5 text-base font-semibold text-black transition-all duration-200 bg-green-300 mt-9 hover:bg-green-400 focus:bg-green-400"
                       role="button"
                     >
-                      {" "}
-                      Get started for free{" "}
+                      Get started for free
                     </a>
                   </div>
 

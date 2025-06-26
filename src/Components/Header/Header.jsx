@@ -94,13 +94,6 @@ const Header = () => {
             </NavLink>
 
             <NavLink
-              to={"/blog"}
-              className="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
-            >
-              Blog
-            </NavLink>
-
-            <NavLink
               to={"/projects"}
               className="text-base font-medium text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
             >

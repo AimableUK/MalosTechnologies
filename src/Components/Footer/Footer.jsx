@@ -64,15 +64,6 @@ const Footer = () => {
 
                 <li>
                   <NavLink
-                    to={"/blog"}
-                    className="border rounded-2xl p-1 px-3 hover:px-4 bg-slate-300 flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
-                  >
-                    Blog
-                  </NavLink>
-                </li>
-
-                <li>
-                  <NavLink
                     to={"/projects"}
                     className="border rounded-2xl p-1 px-3 hover:px-4 bg-slate-300 flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"
                   >

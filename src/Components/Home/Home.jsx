@@ -6,8 +6,6 @@ import test1 from "../../assets/test1.jpg";
 import test2 from "../../assets/test2.jpg";
 import test3 from "../../assets/test3.jpg";
 import Dotted from "../../assets/Dotted.svg";
-import { useBlogs } from "../BlogAPI/BlogAPI";
-import NoImg from "../../assets/noImg.png";
 import { Link } from "react-router-dom";
 
 import { Spiral } from "ldrs/react";
@@ -515,17 +513,6 @@ const Home = () => {
     </div>,
   ];
 
-  const { blogs, isLoading, isError } = useBlogs();
-
-  if (isLoading)
-    return (
-      <div className="flex justify-center">
-        <Spiral size="40" speed="0.9" color="#a5c3cb" />
-      </div>
-    );
-  if (isError) return <p>Error fetching blogs</p>;
-  console.log(isError);
-
   async function handleSubmit(values, actions) {
     try {
       await emailjs.send(
@@ -927,7 +914,7 @@ const Home = () => {
             <span className="my-3 flex items-center justify-center font-medium uppercase tracking-wider">
               Why choose us
             </span>
-            <h2 className="block w-full bg-gradient-to-b from-black to-blue-300 bg-clip-text font-bold text-transparent text-3xl sm:text-4xl">
+            <h2 className="block w-full bg-slate-800 bg-clip-text font-bold text-transparent text-3xl sm:text-4xl">
               Build a Website That Your Customers Love
             </h2>
             <p className="mx-auto my-4 w-full max-w-xl bg-transparent text-center font-medium leading-relaxed tracking-wide text-gray-800">
@@ -938,7 +925,7 @@ const Home = () => {
           </div>
 
           <div className="relative mx-auto max-w-7xl z-10 grid grid-cols-1 gap-10 pt-14 sm:grid-cols-2 lg:grid-cols-3 text-white">
-            <div className="rounded-md border-neutral-700 bg-neutral-800/50 p-8 text-center shadow-2xl cursor-pointer hover:scale-105 transition ease-in-out">
+            <div className="rounded-md border-neutral-700 bg-slate-600 p-8 text-center shadow-2xl cursor-pointer hover:scale-105 transition ease-in-out">
               <div
                 className="button-text mx-auto flex h-12 w-12 items-center justify-center rounded-md border"
                 style={{
@@ -966,7 +953,7 @@ const Home = () => {
                   <line x1="17" y1="17" x2="17" y2="17.01" />
                 </svg>
               </div>
-              <h3 className="mt-6 font-semibold">Customizable</h3>
+              <h3 className="mt-6 font-bold">Customizable</h3>
               <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide">
                 We build web and mobile applications designed to fit your unique
                 business needs. From UI elements to backend functionality, we
@@ -974,7 +961,7 @@ const Home = () => {
               </p>
             </div>
 
-            <div className="rounded-md border-neutral-700 bg-neutral-800/50 p-8 text-center shadow-2xl cursor-pointer hover:scale-105 transition ease-in-out">
+            <div className="rounded-md border-neutral-700 bg-slate-600 p-8 text-center shadow-2xl cursor-pointer hover:scale-105 transition ease-in-out">
               <div
                 className="button-text mx-auto flex h-12 w-12 items-center justify-center rounded-md border"
                 style={{
@@ -999,7 +986,7 @@ const Home = () => {
                   <polyline points="13 3 13 10 19 10 11 21 11 14 5 14 13 3" />
                 </svg>
               </div>
-              <h3 className="mt-6 font-semibold">Fast Performance</h3>
+              <h3 className="mt-6 font-bold">Fast Performance</h3>
               <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide">
                 Our applications are optimized for speed and efficiency,
                 ensuring smooth user experiences with minimal load times—whether
@@ -1007,7 +994,7 @@ const Home = () => {
               </p>
             </div>
 
-            <div className="rounded-md border-neutral-700 bg-neutral-800/50 p-8 text-center shadow-2xl cursor-pointer hover:scale-105 transition ease-in-out">
+            <div className="rounded-md border-neutral-700 bg-slate-600 p-8 text-center shadow-2xl cursor-pointer hover:scale-105 transition ease-in-out">
               <div
                 className="button-text mx-auto flex h-12 w-12 items-center justify-center rounded-md border"
                 style={{
@@ -1037,7 +1024,7 @@ const Home = () => {
                   <line x1="16" y1="17" x2="14.5" y2="18.5" />
                 </svg>
               </div>
-              <h3 className="mt-6 font-semibold">Fully Featured</h3>
+              <h3 className="mt-6 font-bold">Fully Featured</h3>
               <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide ">
                 We deliver comprehensive solutions packed with essential
                 features, from integrations and security to scalability, so you
@@ -1047,89 +1034,6 @@ const Home = () => {
           </div>
         </section>
       </div>
-
-      {/* tech blogs */}
-      <section className="py-10 bg-gray-100 sm:py-16 lg:py-24">
-        <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-          <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
-              Latest from blog
-            </h2>
-            <p className="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-600">
-              Explore the Latest Trends, Insights & Expert Knowledge
-            </p>
-          </div>
-
-          <div className="grid max-w-md grid-cols-1 mx-auto mt-12 lg:max-w-full lg:mt-16 lg:grid-cols-3 gap-x-16 gap-y-12">
-            {blogs.slice(5, 8).map((blog, index) => (
-              <div
-                key={index}
-                className="cursor-pointer shadow-lg rounded-lg hover:-translate-y-1 transition duration-150"
-              >
-                <a
-                  href={blog.url}
-                  target="_blank"
-                  title=""
-                  className="block aspect-w-4 aspect-h-3"
-                >
-                  <img
-                    className="object-cover w-full h-full"
-                    src={blog.urlToImage || NoImg}
-                    alt={blog.title}
-                  />
-                </a>
-                <div className="px-3 pb-2">
-                  <span className="inline-flex px-4 py-2 text-xs font-semibold tracking-widest uppercase rounded-full text-rose-500 bg-rose-100 mt-9">
-                    {" "}
-                    Technology{" "}
-                  </span>
-                  <p className="mt-6 text-xl font-semibold">
-                    <a
-                      href={blog.url}
-                      target="_blank"
-                      title=""
-                      className="text-black"
-                    >
-                      {blog.title}
-                    </a>
-                  </p>
-                  <p className="mt-4 text-gray-600 line-clamp-3">
-                    {blog.description}
-                  </p>
-                  <div className="h-0 mt-6 mb-4 border-t-2 border-gray-200 border-dashed"></div>
-                  <span className="block text-sm font-bold tracking-widest text-gray-500 uppercase">
-                    {blog.publishedAt}
-                  </span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-        <div className="flex justify-center">
-          <Link to={"/blog"}>
-            <p
-              className="inline-flex items-center px-6 py-4 mt-8 font-semibold text-black transition-all duration-200 bg-yellow-300 rounded-full lg:mt-16 hover:bg-yellow-400 focus:bg-yellow-400"
-              role="button"
-            >
-              VIEW MORE BLOGS
-              <svg
-                className="w-6 h-6 ml-8 -mr-2"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="1.5"
-                  d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-            </p>
-          </Link>
-        </div>
-      </section>
 
       {/* our people */}
       <section className="py-10 bg-white sm:py-16 lg:py-24">
