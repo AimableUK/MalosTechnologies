@@ -7,7 +7,7 @@ import test2 from "../../assets/test2.jpg";
 import test3 from "../../assets/test3.jpg";
 import Dotted from "../../assets/Dotted.svg";
 import { useBlogs } from "../BlogAPI/BlogAPI";
-import NoImg from "../../assets/NoImg.png";
+import NoImg from "../../assets/noImg.png";
 import { Link } from "react-router-dom";
 
 import { Spiral } from "ldrs/react";
