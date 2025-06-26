@@ -7,7 +7,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 img {
     -webkit-user-drag: none;
     pointer-events: none;
-  }
+}
