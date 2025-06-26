@@ -584,7 +584,8 @@ const Home = () => {
         <Spiral size="40" speed="0.9" color="#a5c3cb" />
       </div>
     );
-  if (isError) return <p>Error fetching blogs</p>;
+  if (isError) return <p>Error fetching blogs {isError}</p>;
+  console.log(isError);
 
   async function handleSubmit(values, actions) {
     try {
