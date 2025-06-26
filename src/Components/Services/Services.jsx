@@ -8,12 +8,13 @@ import userexp from "../../assets/userexp.svg";
 
 const Services = () => {
   return (
-    <section className="mx-auto max-w-[1440px] pt-12 bg-gradient-to-b from-white via-gray-300 via-20% to-gray-100 w-fit md:w-screen">
+    <section className="mx-auto max-w-[1440px] pt-12 bg-gradient-to-b from-white via-gray-300 via-20% to-gray-100 w-screen">
       <div className="flex">
         <div className="mx-auto grid grid-cols-[550px] justify-center gap-10 md:gap-6 lg:gap-8 xl:grid-cols-[550px_550px] xl:gap-10">
-          <div className="inline-flex w-[500px] items-center justify-between overflow-hidden rounded-[45px] bg-[#f3f3f3] p-8 shadow-[0px_5px_0px_0px_rgba(25,26,35,1.00)] outline outline-1 outline-offset-[-1px] outline-[#191a23] sm:ml-[50px] sm:w-[550px] sm:p-12 lg:p-8 xl:m-0 xl:p-12">
+
+          <div className="inline-flex w-[300px] md:w-[500px] items-center justify-between overflow-hidden rounded-[45px] bg-[#f3f3f3] p-8 shadow-[0px_5px_0px_0px_rgba(25,26,35,1.00)] outline outline-1 outline-offset-[-1px] outline-[#191a23] sm:ml-[50px] sm:w-[500px] sm:p-12 lg:p-8 xl:m-0 xl:p-12 ml-2">
             <div className="inline-flex flex-col items-start justify-center gap-[90px]">
-              <h2 className="flex flex-col items-start justify-start text-3xl font-medium text-black">
+              <h2 className="flex flex-col items-start justify-start text-xl md:text-3xl font-medium text-slate-800 z-10">
                 Search engine Optimization
               </h2>
               <div className="inline-flex items-center justify-start gap-[15px] font-['Space_Grotesk']">
@@ -30,16 +31,17 @@ const Services = () => {
                     fill="#B9FF66"
                   ></path>
                 </svg>
-                <span className="text-xl leading-7 font-normal text-black">
+                <span className="text-xl leading-7 font-normal text-slate-800 z-10">
                   Learn more
                 </span>
               </div>
             </div>
-            <img className="w-[210px]" src={SearchEngine} />
+            <img className="w-[210px] absolute z-0 opacity-40 md:relative md:z-auto md:opacity-100" src={SearchEngine} />
           </div>
-          <div className="inline-flex w-[500px] items-center justify-between overflow-hidden rounded-[45px] bg-[#e1edd1] p-8 shadow-[0px_5px_0px_0px_rgba(25,26,35,1.00)] outline outline-1 outline-offset-[-1px] outline-[#191a23] sm:ml-[-50px] sm:w-[550px] sm:p-12 lg:p-8 xl:m-0 xl:p-12">
+
+          <div className="inline-flex w-[300px] md:w-[500px] items-center justify-between overflow-hidden rounded-[45px] bg-[#e1edd1] p-8 shadow-[0px_5px_0px_0px_rgba(25,26,35,1.00)] outline outline-1 outline-offset-[-1px] outline-[#191a23] sm:ml-[-50px] sm:w-[550px] sm:p-12 lg:p-8 xl:m-0 xl:p-12 ml-2">
             <div className="inline-flex flex-col items-start justify-center gap-[90px]">
-              <h2 className="flex flex-col items-start justify-start text-3xl font-medium text-black">
+              <h2 className="flex flex-col items-start justify-start text-xl md:text-3xl font-medium text-slate-800 z-10">
                 <span>UI/UX Design & Prototyping</span>
                 <span>advertising</span>
               </h2>
@@ -57,16 +59,17 @@ const Services = () => {
                     fill="#B9FF66"
                   ></path>
                 </svg>
-                <span className="text-xl leading-7 font-normal text-black">
+                <span className="text-xl leading-7 font-normal text-slate-800 z-10">
                   Learn more
                 </span>
               </div>
             </div>
-            <img className="w-[210px]" src={UiUxDesign} />
+            <img className="w-[210px] absolute z-0 opacity-40 md:relative md:z-auto md:opacity-100" src={UiUxDesign} />
           </div>
-          <div className="inline-flex w-[500px] items-center justify-between overflow-hidden rounded-[45px] bg-[#191A23] p-8 shadow-[0px_5px_0px_0px_rgba(25,26,35,1.00)] outline outline-1 outline-offset-[-1px] outline-[#191a23] sm:ml-[50px] sm:w-[550px] sm:p-12 lg:p-8 xl:m-0 xl:p-12">
+
+          <div className="inline-flex w-[300px] md:w-[500px] items-center justify-between overflow-hidden rounded-[45px] bg-[#191A23] p-8 shadow-[0px_5px_0px_0px_rgba(25,26,35,1.00)] outline outline-1 outline-offset-[-1px] outline-[#191a23] sm:ml-[50px] sm:w-[550px] sm:p-12 lg:p-8 xl:m-0 xl:p-12 ml-2">
             <div className="inline-flex flex-col items-start justify-center gap-[90px]">
-              <h2 className="flex flex-col items-start justify-start text-3xl font-medium text-white">
+              <h2 className="flex flex-col items-start justify-start text-xl md:text-3xl font-medium text-slate-300 z-10">
                 Full-Stack Web Development
               </h2>
               <div className="inline-flex items-center justify-start gap-[15px] font-['Space_Grotesk']">
@@ -83,16 +86,17 @@ const Services = () => {
                     fill="#000"
                   ></path>
                 </svg>
-                <span className="text-xl leading-7 font-normal text-white">
+                <span className="text-xl leading-7 font-normal text-slate-300 z-10">
                   Learn more
                 </span>
               </div>
             </div>
-            <img className="w-[210px]" src={webdev} />
+            <img className="w-[210px] absolute z-0 opacity-40 md:relative md:z-auto md:opacity-100" src={webdev} />
           </div>
-          <div className="inline-flex w-[500px] items-center justify-between overflow-hidden rounded-[45px] bg-[#f3f3f3] p-8 shadow-[0px_5px_0px_0px_rgba(25,26,35,1.00)] outline outline-1 outline-offset-[-1px] outline-[#191a23] sm:ml-[-50px] sm:w-[550px] sm:p-12 lg:p-8 xl:m-0 xl:p-12">
+
+          <div className="inline-flex w-[300px] md:w-[500px] items-center justify-between overflow-hidden rounded-[45px] bg-[#f3f3f3] p-8 shadow-[0px_5px_0px_0px_rgba(25,26,35,1.00)] outline outline-1 outline-offset-[-1px] outline-[#191a23] sm:ml-[-50px] sm:w-[550px] sm:p-12 lg:p-8 xl:m-0 xl:p-12 ml-2">
             <div className="inline-flex flex-col items-start justify-center gap-[90px]">
-              <h2 className="flex flex-col items-start justify-start text-3xl font-medium text-black">
+              <h2 className="flex flex-col items-start justify-start text-xl md:text-3xl font-medium text-slate-800 z-10">
                 Performance Optimization
               </h2>
               <div className="inline-flex items-center justify-start gap-[15px] font-['Space_Grotesk']">
@@ -109,16 +113,17 @@ const Services = () => {
                     fill="#B9FF66"
                   ></path>
                 </svg>
-                <span className="text-xl leading-7 font-normal text-black">
+                <span className="text-xl leading-7 font-normal text-slate-800 z-10">
                   Learn more
                 </span>
               </div>
             </div>
-            <img className="w-[210px]" src={Optimization} />
+            <img className="w-[210px] absolute z-0 opacity-40 md:relative md:z-auto md:opacity-100" src={Optimization} />
           </div>
-          <div className="inline-flex w-[500px] items-center justify-between overflow-hidden rounded-[45px] bg-[#e1edd1] p-8 shadow-[0px_5px_0px_0px_rgba(25,26,35,1.00)] outline outline-1 outline-offset-[-1px] outline-[#191a23] sm:ml-[50px] sm:w-[550px] sm:p-12 lg:p-8 xl:m-0 xl:p-12">
+
+          <div className="inline-flex w-[300px] md:w-[500px] items-center justify-between overflow-hidden rounded-[45px] bg-[#e1edd1] p-8 shadow-[0px_5px_0px_0px_rgba(25,26,35,1.00)] outline outline-1 outline-offset-[-1px] outline-[#191a23] sm:ml-[50px] sm:w-[550px] sm:p-12 lg:p-8 xl:m-0 xl:p-12 ml-2">
             <div className="inline-flex flex-col items-start justify-center gap-[90px]">
-              <h2 className="flex flex-col items-start justify-start text-3xl font-medium text-black">
+              <h2 className="flex flex-col items-start justify-start text-xl md:text-3xl font-medium text-slate-800 z-10">
                 Website Maintenance & Support
               </h2>
               <div className="inline-flex items-center justify-start gap-[15px] font-['Space_Grotesk']">
@@ -135,16 +140,17 @@ const Services = () => {
                     fill="#B9FF66"
                   ></path>
                 </svg>
-                <span className="text-xl leading-7 font-normal text-black">
+                <span className="text-xl leading-7 font-normal text-slate-800 z-10">
                   Learn more
                 </span>
               </div>
             </div>
-            <img className="w-[210px]" src={webrepair} />
+            <img className="w-[210px] absolute z-0 opacity-40 md:relative md:z-auto md:opacity-100" src={webrepair} />
           </div>
-          <div className="inline-flex w-[500px] items-center justify-between overflow-hidden rounded-[45px] bg-[#191A23] p-8 shadow-[0px_5px_0px_0px_rgba(25,26,35,1.00)] outline outline-1 outline-offset-[-1px] outline-[#191a23] sm:ml-[-50px] sm:w-[550px] sm:p-12 lg:p-8 xl:m-0 xl:p-12">
+
+          <div className="inline-flex w-[300px] md:w-[500px] items-center justify-between overflow-hidden rounded-[45px] bg-[#191A23] p-8 shadow-[0px_5px_0px_0px_rgba(25,26,35,1.00)] outline outline-1 outline-offset-[-1px] outline-[#191a23] sm:ml-[-50px] sm:w-[550px] sm:p-12 lg:p-8 xl:m-0 xl:p-12 ml-2">
             <div className="inline-flex flex-col items-start justify-center gap-[90px]">
-              <h2 className="flex flex-col items-start justify-start text-3xl font-medium text-white">
+              <h2 className="flex flex-col items-start justify-start text-cl md:text-3xl font-medium text-slate-200 z-10">
                 User-First Experience Design
               </h2>
               <div className="inline-flex items-center justify-start gap-[15px] font-['Space_Grotesk']">
@@ -161,12 +167,12 @@ const Services = () => {
                     fill="#000"
                   ></path>
                 </svg>
-                <span className="text-xl leading-7 font-normal text-white">
+                <span className="text-xl leading-7 font-normal text-slate-200 z-10">
                   Learn more
                 </span>
               </div>
             </div>
-            <img className="w-[210px]" src={userexp} />
+            <img className="w-[210px] absolute z-0 opacity-30 md:relative md:z-auto md:opacity-100" src={userexp} />
           </div>
         </div>
       </div>
