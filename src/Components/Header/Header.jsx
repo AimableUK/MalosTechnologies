@@ -14,7 +14,7 @@ const Header = () => {
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* <!-- lg+ --> */}
         <nav className="relative flex w-full justify-between h-16 bg-white lg:rounded-md lg:shadow-lg lg:h-24 lg:px-8 lg:py-6">
-          <div className="flex flex-row items-start md:items-center flex-shrink-0">
+          <div className="flex flex-row justify-between items-start md:items-center flex-shrink-0">
             <Link to={"/"} className="flex flex-row items-center mt-5 md:mt-0">
               <img
                 className="w-auto h-8 lg:h-10"
