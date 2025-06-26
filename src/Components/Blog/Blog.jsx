@@ -1,6 +1,6 @@
 import React from 'react'
 import { useBlogs } from '../BlogAPI/BlogAPI'
-import NoImg from '../../assets/NoImg.png'
+import NoImg from '../../assets/noImg.png'
 import { Spiral } from 'ldrs/react'
 import 'ldrs/react/Spiral.css'
 
