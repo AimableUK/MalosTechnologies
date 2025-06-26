@@ -64,67 +64,6 @@ const Home = () => {
       answer:
         "Yes! We provide ongoing maintenance, updates, and technical support to ensure your application runs smoothly and remains secure.",
     },
-    {
-      id: 6,
-      question: "Can you redesign or improve my existing website?",
-      answer:
-        "Absolutely! We can revamp your existing website with a modern design, improved performance, and enhanced functionality.",
-    },
-    {
-      id: 7,
-      question: "What technologies do you use?",
-      answer:
-        "We use modern technologies such as React, Next.js, Node.js, Tailwind CSS, and Firebase to create high-performance applications.",
-    },
-    {
-      id: 8,
-      question: "Do you offer SEO and performance optimization?",
-      answer:
-        "Yes! We optimize your website for speed, user experience, and search engines to improve visibility and engagement.",
-    },
-    {
-      id: 9,
-      question:
-        "Can you integrate third-party services into my web application?",
-      answer:
-        "Yes! We integrate services like payment gateways (Stripe, PayPal), email services (EmailJS, SendGrid), and authentication (OAuth, Firebase Auth).",
-    },
-    {
-      id: 10,
-      question: "How can I contact Malos Technologies?",
-      answer:
-        "You can reach us via email or through our contact form on our website. We typically respond within 24 hours.",
-    },
-    {
-      id: 11,
-      question: "Do you work with startups and small businesses?",
-      answer:
-        "Yes! We work with businesses of all sizes, from startups to enterprises, providing scalable and cost-effective web solutions.",
-    },
-    {
-      id: 12,
-      question: "Can I request custom features for my web application?",
-      answer:
-        "Of course! We tailor web applications to your specific needs and can develop custom features that align with your business goals.",
-    },
-    {
-      id: 13,
-      question: "Will my website be mobile-friendly?",
-      answer:
-        "Yes! We ensure that all our web applications are fully responsive and optimized for mobile, tablet, and desktop users.",
-    },
-    {
-      id: 14,
-      question: "Do you provide hosting and domain registration?",
-      answer:
-        "While we don't directly provide hosting or domain registration, we can recommend the best providers and assist with setup and configuration.",
-    },
-    {
-      id: 15,
-      question: "Can you help migrate my existing website to a new platform?",
-      answer:
-        "Yes! We offer migration services to move your existing website to a modern, scalable, and more efficient platform without data loss.",
-    },
   ];
 
   const showAns = (index) => {
@@ -584,7 +523,7 @@ const Home = () => {
         <Spiral size="40" speed="0.9" color="#a5c3cb" />
       </div>
     );
-  if (isError) return <p>Error fetching blogs {isError}</p>;
+  if (isError) return <p>Error fetching blogs</p>;
   console.log(isError);
 
   async function handleSubmit(values, actions) {
