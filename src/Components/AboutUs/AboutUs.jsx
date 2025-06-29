@@ -41,21 +41,21 @@ const AboutUs = () => {
           {/* <!-- About Cards Section --> */}
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {/* <!-- Card 1 --> */}
-            <div className="rounded-lg border border-gray-800 bg-[#1A1A1A] p-6 text-center">
+            <div className="rounded-lg border border-gray-800 bg-[#2e2e2e] p-6 text-center">
               <h4 className="mb-2 text-3xl font-bold text-purple-400">6+</h4>
-              <p className="text-gray-400">Years Experience</p>
+              <p className="text-gray-400 font-semibold">Years Experience</p>
             </div>
-            <div className="rounded-lg border border-gray-800 bg-[#1A1A1A] p-6 text-center">
+            <div className="rounded-lg border border-gray-800 bg-[#2e2e2e] p-6 text-center">
               <h4 className="mb-2 text-3xl font-bold text-purple-400">500+</h4>
-              <p className="text-gray-400">Successful Projects</p>
+              <p className="text-gray-400 font-semibold">Successful Projects</p>
             </div>
-            <div className="rounded-lg border border-gray-800 bg-[#1A1A1A] p-6 text-center">
+            <div className="rounded-lg border border-gray-800 bg-[#2e2e2e] p-6 text-center">
               <h4 className="mb-2 text-3xl font-bold text-purple-400">130%</h4>
-              <p className="text-gray-400">Global Reach</p>
+              <p className="text-gray-400 font-semibold">Global Reach</p>
             </div>
-            <div className="rounded-lg border border-gray-800 bg-[#1A1A1A] p-6 text-center">
+            <div className="rounded-lg border border-gray-800 bg-[#2e2e2e] p-6 text-center">
               <h4 className="mb-2 text-3xl font-bold text-purple-400">100%</h4>
-              <p className="text-gray-400">Trusted by Businesses</p>
+              <p className="text-gray-400 font-semibold">Trusted by Businesses</p>
             </div>
           
           </div>
