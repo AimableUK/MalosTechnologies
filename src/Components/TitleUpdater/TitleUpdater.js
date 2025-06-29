@@ -8,7 +8,7 @@ const PageTitleUpdater = () => {
     let title = "MalosFlix";
 
     if (location.pathname === "/") {
-      title = "Welcome to Malos Technologies";
+      title = "Malos Technologies";
     } else if (location.pathname === "/contact") {
       title = "Contact Us";
     } else if (location.pathname === "/projects") {

@@ -1,6 +1,8 @@
 import React from "react";
 import malosFlix from "../../assets/malosFlix.png";
-import malosCore from "../../assets/malosCore.png";
+import malosHaven from "../../assets/malosHaven.png";
+import tastyMundo from "../../assets/tastyMundo.png";
+import nivra from "../../assets/nivra.png";
 
 const Projects = () => {
   return (
@@ -16,7 +18,7 @@ const Projects = () => {
               <img
                 className="object-cover w-full h-full"
                 src={malosFlix}
-                alt=""
+                alt="malos Flix Project"
               />
             </a>
             <div className="px-3 pb-2">
@@ -38,29 +40,87 @@ const Projects = () => {
 
           <div className="cursor-pointer shadow-lg rounded-lg hover:-translate-y-1 transition duration-150 h-fit">
             <a
-              href="https://malos-core.vercel.app/"
+              href="https://malos-haven.vercel.app/"
               target="_blank"
               className="block aspect-w-4 aspect-h-3"
             >
               <img
                 className="object-cover w-full h-full"
-                src={malosCore}
-                alt=""
+                src={malosHaven}
+                alt="Malos Haven Project"
               />
             </a>
             <div className="px-3 pb-2">
               <p className="mt-6 text-xl font-semibold">
                 <a
-                  href="https://malos-flix.vercel.app/"
+                  href="https://malos-haven.vercel.app/"
                   target="_blank"
                   title=""
                   className="text-black"
                 >
-                  Malos Core
+                  Malos Haven
                 </a>
               </p>
               <p className="mt-4 text-gray-600">
-                A Best Admin Panel for Managing Stock
+                A Property Managament Website (Under Development)
+              </p>
+            </div>
+          </div>
+
+          <div className="cursor-pointer shadow-lg rounded-lg hover:-translate-y-1 transition duration-150 h-fit">
+            <a
+              href="https://tasty-mundo.vercel.app/"
+              target="_blank"
+              className="block aspect-w-4 aspect-h-3"
+            >
+              <img
+                className="object-cover w-full h-full"
+                src={tastyMundo}
+                alt="Tasty Mundo Project"
+              />
+            </a>
+            <div className="px-3 pb-2">
+              <p className="mt-6 text-xl font-semibold">
+                <a
+                  href="https://tasty-mundo.vercel.app/"
+                  target="_blank"
+                  title=""
+                  className="text-black"
+                >
+                  Tasty Mundo
+                </a>
+              </p>
+              <p className="mt-4 text-gray-600">
+                An AI Powered Recipe Generator (Under Development)
+              </p>
+            </div>
+          </div>
+
+          <div className="cursor-pointer shadow-lg rounded-lg hover:-translate-y-1 transition duration-150 h-fit">
+            <a
+              href="https://nivra.vercel.app/"
+              target="_blank"
+              className="block aspect-w-4 aspect-h-3"
+            >
+              <img
+                className="object-cover w-full h-full"
+                src={nivra}
+                alt="Nivra Project"
+              />
+            </a>
+            <div className="px-3 pb-2">
+              <p className="mt-6 text-xl font-semibold">
+                <a
+                  href="https://nivra.vercel.app/"
+                  target="_blank"
+                  title=""
+                  className="text-black"
+                >
+                  Nivra
+                </a>
+              </p>
+              <p className="mt-4 text-gray-600">
+                A Best Weather Forecast (Under development)
               </p>
             </div>
           </div>
